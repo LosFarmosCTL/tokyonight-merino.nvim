@@ -1,0 +1,47 @@
+{
+  "name": "TokyoNight Merino Light",
+  "type": "custom",
+  "text": {
+    "primary": "#1f2328",
+    "secondary": "#696d71",
+    "link": "#1b7c83",
+    "accent": "#8250df",
+    "response": "#1f2328"
+  },
+  "background": {
+    "primary": "#ffffff",
+    "diff": {
+      "added": "#e5ede6",
+      "removed": "#fee9e7"
+    }
+  },
+  "border": {
+    "default": "#e9e9ea",
+    "focused": "#0969da"
+  },
+  "status": {
+    "success": "#116329",
+    "warning": "#9d5c00",
+    "error": "#cf222e"
+  },
+  "ui": {
+    "comment": "#696d71",
+    "symbol": "#696d71",
+    "gradient": ["#0969da", "#8250df", "#1b7c83"]
+  },
+  "Background": "#ffffff",
+  "Foreground": "#1f2328",
+  "LightBlue": "#1b7c83",
+  "AccentBlue": "#8250df",
+  "AccentPurple": "#8250df",
+  "AccentCyan": "#1b7c83",
+  "AccentGreen": "#116329",
+  "AccentYellow": "#9d5c00",
+  "AccentRed": "#cf222e",
+  "DiffAdded": "#e5ede6",
+  "DiffRemoved": "#fee9e7",
+  "Comment": "#696d71",
+  "Gray": "#696d71",
+  "DarkGray": "#eceef2",
+  "GradientColors": ["#0969da", "#8250df", "#1b7c83"]
+}

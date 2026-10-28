@@ -1,0 +1,36 @@
+style:
+  name: tokyonight-merino-light
+  body:
+    fgColor: '#1f2328'
+    bgColor: '#eceef2'
+    secondaryTextColor: '#696d71'
+    tertiaryTextColor: '#1f2328'
+    borderColor: '#e7e9eb'
+  stat_table:
+    keyFgColor: '#9d5c00'
+    valueFgColor: '#1f2328'
+    logoColor: '#9d5c00'
+  proc_table:
+    fgColor: '#0969da'
+    fgWarning: '#9d5c00'
+    fgPending: '#878a8e'
+    fgCompleted: '#116329'
+    fgError: '#cf222e'
+    headerFgColor: '#1f2328'
+  help:
+    fgColor: '#1b7c83'
+    keyColor: '#1f2328'
+    hlColor: '#116329'
+    categoryFgColor: '#0969da'
+  dialog:
+    fgColor: '#1b7c83'
+    bgColor: '#ffffff'
+    contrastBgColor: '#ffffff'
+    attentionBgColor: '#cf222e'
+    buttonFgColor: '#ffffff'
+    buttonBgColor: '#e9e9ea'
+    buttonFocusFgColor: '#ffffff'
+    buttonFocusBgColor: '#0969da'
+    labelFgColor: '#9d5c00'
+    fieldFgColor: '#ffffff'
+    fieldBgColor: '#0667d8'

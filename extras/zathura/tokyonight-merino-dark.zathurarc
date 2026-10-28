@@ -1,0 +1,38 @@
+# TokyoNight Merino color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# TokyoNight Merino color theme
+#
+set notification-error-bg "#ff7b72"
+set notification-error-fg "#e6edf3"
+set notification-warning-bg "#d29922"
+set notification-warning-fg "#6e7681"
+set notification-bg "#0d1117"
+set notification-fg "#e6edf3"
+set completion-bg "#0d1117"
+set completion-fg "#82878c"
+set completion-group-bg "#0d1117"
+set completion-group-fg "#82878c"
+set completion-highlight-bg "#6e7681"
+set completion-highlight-fg "#e6edf3"
+set index-bg "#0d1117"
+set index-fg "#e6edf3"
+set index-active-bg "#6e7681"
+set index-active-fg "#e6edf3"
+set inputbar-bg "#0d1117"
+set inputbar-fg "#e6edf3"
+set statusbar-bg "#0d1117"
+set statusbar-fg "#e6edf3"
+set highlight-color "#d29922"
+set highlight-active-color "#a3bd8d"
+set default-bg "#0d1117"
+set default-fg "#e6edf3"
+set render-loading true
+set render-loading-fg "#0d1117"
+set render-loading-bg "#e6edf3"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#0d1117"
+set recolor-darkcolor "#e6edf3"

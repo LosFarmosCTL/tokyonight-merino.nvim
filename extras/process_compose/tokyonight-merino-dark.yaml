@@ -1,0 +1,36 @@
+style:
+  name: tokyonight-merino-dark
+  body:
+    fgColor: '#e6edf3'
+    bgColor: '#131519'
+    secondaryTextColor: '#82878c'
+    tertiaryTextColor: '#e6edf3'
+    borderColor: '#2e3135'
+  stat_table:
+    keyFgColor: '#d29922'
+    valueFgColor: '#e6edf3'
+    logoColor: '#d29922'
+  proc_table:
+    fgColor: '#58a6ff'
+    fgWarning: '#d29922'
+    fgPending: '#666a6f'
+    fgCompleted: '#a3bd8d'
+    fgError: '#ff7b72'
+    headerFgColor: '#e6edf3'
+  help:
+    fgColor: '#39c5cf'
+    keyColor: '#e6edf3'
+    hlColor: '#a3bd8d'
+    categoryFgColor: '#79c0ff'
+  dialog:
+    fgColor: '#39c5cf'
+    bgColor: '#0d1117'
+    contrastBgColor: '#0d1117'
+    attentionBgColor: '#ff7b72'
+    buttonFgColor: '#0d1117'
+    buttonBgColor: '#23272d'
+    buttonFocusFgColor: '#0d1117'
+    buttonFocusBgColor: '#58a6ff'
+    labelFgColor: '#d29922'
+    fieldFgColor: '#0d1117'
+    fieldBgColor: '#58a6ff'

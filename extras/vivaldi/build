@@ -1,18 +1,14 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python3
+"""Package the generated Merino definitions as reproducible Vivaldi ZIPs."""
 
-set -euo pipefail
+from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
-CURRENT_DIR=$(pwd)
-TEMP_DIR=$(mktemp -d) || exit 1
-
-cleanup() {
-  rm -rf "$TEMP_DIR"
-}
-
-trap cleanup EXIT
-
-for json_file in *.json; do
-  base_name=$(basename "$json_file" .json)
-  cp "$json_file" "$TEMP_DIR/settings.json"
-  (cd "$TEMP_DIR" && zip -q "$CURRENT_DIR/${base_name}.zip" settings.json)
-done
+directory = Path(__file__).resolve().parent
+for path in sorted(directory.glob("tokyonight-merino-*.json")):
+    destination = path.with_suffix(".zip")
+    entry = ZipInfo("settings.json", date_time=(1980, 1, 1, 0, 0, 0))
+    entry.compress_type = ZIP_DEFLATED
+    with ZipFile(destination, "w") as archive:
+        archive.writestr(entry, path.read_bytes())
+    print(destination.name)

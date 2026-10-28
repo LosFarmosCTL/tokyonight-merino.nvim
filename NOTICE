@@ -1,0 +1,9 @@
+TokyoNight Merino is derived from TokyoNight by folke and its contributors:
+https://github.com/folke/tokyonight.nvim
+
+The inherited code is distributed under the Apache License, Version 2.0.
+This fork retains TokyoNight's Neovim highlight and plugin integration work,
+replaces its palettes with a Merino adaptation, and adapts its external-app
+exports for Merino light and dark appearances.
+
+The Merino source color definitions were extracted from Superlogical Rex.

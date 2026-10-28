@@ -1,0 +1,45 @@
+[colors]
+foreground = "#e6edf3"
+background = "#0d1117"
+cursor_bg = "#2f81f7"
+cursor_border = "#2f81f7"
+cursor_fg = "#eff8ff"
+selection_bg = "#383d43"
+selection_fg = "#e6edf3"
+split = "#58a6ff"
+compose_cursor = "#e98a4a"
+scrollbar_thumb = "#23272d"
+
+ansi = ["#484f58", "#ff7b72", "#3fb950", "#d29922", "#58a6ff", "#bc8cff", "#39c5cf", "#b1bac4"]
+brights = ["#6e7681", "#ffa198", "#56d364", "#e3b341", "#79c0ff", "#d2a8ff", "#56d4dd", "#ffffff"]
+
+[colors.tab_bar]
+inactive_tab_edge = "#131519"
+background = "#0d1117"
+
+[colors.tab_bar.active_tab]
+fg_color = "#131519"
+bg_color = "#58a6ff"
+
+[colors.tab_bar.inactive_tab]
+fg_color = "#666a6f"
+bg_color = "#23272d"
+
+[colors.tab_bar.inactive_tab_hover]
+fg_color = "#58a6ff"
+bg_color = "#23272d"
+# intensity = "Bold"
+
+[colors.tab_bar.new_tab_hover]
+fg_color = "#58a6ff"
+bg_color = "#0d1117"
+intensity = "Bold"
+
+[colors.tab_bar.new_tab]
+fg_color = "#58a6ff"
+bg_color = "#0d1117"
+
+[metadata]
+aliases = []
+author = "LosFarmosCTL"
+name = "tokyonight-merino-dark"

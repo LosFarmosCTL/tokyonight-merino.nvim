@@ -1,0 +1,17 @@
+# TokyoNight Merino colors for dunst
+# For more configuration options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
+[urgency_low]
+    background = "#eceef2"
+    foreground = "#1f2328"
+    frame_color = "#1f2328"
+
+[urgency_normal]
+    background = "#ffffff"
+    foreground = "#1f2328"
+    frame_color = "#1f2328"
+
+[urgency_critical]
+    background = "#e9e9ea"
+    foreground = "#cf222e"
+    frame_color = "#cf222e"

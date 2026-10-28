@@ -1,15 +1,6 @@
-<h3 align="center">
-	Tokyonight for <a href="https://github.com/eza-community/eza">eza</a>
-</h3>
+# Merino for eza
 
-### About
-
-The Tokyonight themes for `eza`, a modern replacement for `ls`.
-
-### Usage
-
-1. Copy the theme `.yml` file `~/.config/eza/theme.yml`
-
-Note: on MacOS, `eza` will look for the theme file in `~/Library/Application Support/eza` by default. That directory can be overridden by setting `EZA_CONFIG_DIR`.
-
-For more information, see [eza-themes](https://github.com/eza-community/eza-themes)
+Install the selected `tokyonight-merino-dark.yml` or
+`tokyonight-merino-light.yml` as `theme.yml` in your eza configuration directory.
+See [eza's theme documentation](https://github.com/eza-community/eza-themes)
+for configuration-directory options.

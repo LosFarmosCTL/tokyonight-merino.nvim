@@ -1,12 +1,19 @@
-Create ` ~/.config/ghostty/themes`
-and download theme file into `themes` directory.
-Then in `~/.config/ghostty/config` chose the theme.
+# Merino for Ghostty
 
-Example:
+Copy the selected theme into `~/.config/ghostty/themes/`, then add to your
+Ghostty configuration:
 
 ```ini
-theme = "tokyonight_night"
+theme = tokyonight-merino-dark
 ```
 
-For full list of installed themes:
-`ghostty +list-themes`
+For automatic appearance selection, install both files and use:
+
+```ini
+theme = light:tokyonight-merino-light,dark:tokyonight-merino-dark
+```
+
+Use `ghostty +list-themes` to inspect installed themes.
+
+See [Ghostty's theme reference](https://ghostty.org/docs/config/reference#theme)
+for appearance selection and overrides.

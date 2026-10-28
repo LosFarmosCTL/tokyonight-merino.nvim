@@ -1,0 +1,18 @@
+# Import this theme as follows:
+# 1. Create a new profile for GNOME Terminal
+# 2. Copy the UUID of the new profile (bottom right corner of the preferences window)
+# 3. Replace <PROFILE_UUID> below with the copied UUID
+# 4. Execute `dconf load /org/gnome/terminal/legacy/profiles:/ < tokyonight-merino-dark.dconf`
+
+[:<PROFILE_UUID>]
+background-color='rgb(13, 17, 23)'
+cursor-background-color='rgb(47, 129, 247)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(239, 248, 255)'
+foreground-color='rgb(230, 237, 243)'
+highlight-background-color='rgb(56, 61, 67)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(230, 237, 243)'
+palette=['#484f58', '#ff7b72', '#3fb950', '#d29922', '#58a6ff', '#bc8cff', '#39c5cf', '#b1bac4', '#6e7681', '#ffa198', '#56d364', '#e3b341', '#79c0ff', '#d2a8ff', '#56d4dd', '#ffffff']
+use-theme-colors=false
+visible-name='TokyoNight Merino Dark'

@@ -1,0 +1,16 @@
+assistant-output-color: "#1f2328"
+
+# see the aider extra README for more information about setting the `code-theme`
+# https://github.com/LosFarmosCTL/tokyonight-merino/blob/main/extras/aider/README.md
+# Keep a built-in code-theme of your choice; this export does not include a Pygments plugin.
+
+completion-menu-color: "#1f2328"
+completion-menu-bg-color: "#fafbfc"
+completion-menu-current-color: "#1f2328"
+completion-menu-current-bg-color: "#e9e9ea"
+
+tool-error-color: "#cf222e"
+tool-output-color: "#0969da"
+tool-warning-color: "#9d5c00"
+
+user-input-color: "#116329"

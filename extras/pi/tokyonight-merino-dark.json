@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/badlogic/pi-mono/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
+  "name": "TokyoNight Merino Dark",
+  "colors": {
+    "accent": "#58a6ff",
+    "border": "#424549",
+    "borderAccent": "#39c5cf",
+    "borderMuted": "#2e3135",
+    "success": "#80b7ad",
+    "error": "#ff7b72",
+    "warning": "#d29922",
+    "muted": "#82878c",
+    "dim": "#82878c",
+    "text": "",
+    "thinkingText": "#82878c",
+
+    "selectedBg": "#383d43",
+    "userMessageBg": "#131519",
+    "userMessageText": "",
+    "customMessageBg": "#131519",
+    "customMessageText": "",
+    "customMessageLabel": "#bc8cff",
+    "toolPendingBg": "#23272d",
+    "toolSuccessBg": "#23272d",
+    "toolErrorBg": "#19161c",
+    "toolTitle": "",
+    "toolOutput": "#82878c",
+
+    "mdHeading": "#58a6ff",
+    "mdLink": "#39c5cf",
+    "mdLinkUrl": "#82878c",
+    "mdCode": "#58a6ff",
+    "mdCodeBlock": "#131519",
+    "mdCodeBlockBorder": "#82878c",
+    "mdQuote": "#82878c",
+    "mdQuoteBorder": "#82878c",
+    "mdHr": "#e98a4a",
+    "mdListBullet": "#e98a4a",
+
+    "toolDiffAdded": "#162822",
+    "toolDiffRemoved": "#2e2125",
+    "toolDiffContext": "#253f5e",
+
+    "syntaxComment": "#82878c",
+    "syntaxKeyword": "#bc8cff",
+    "syntaxFunction": "#58a6ff",
+    "syntaxVariable": "#e6edf3",
+    "syntaxString": "#a3bd8d",
+    "syntaxNumber": "#e98a4a",
+    "syntaxType": "#39c5cf",
+    "syntaxOperator": "#79c0ff",
+    "syntaxPunctuation": "#79c0ff",
+
+    "thinkingOff": "#666a6f",
+    "thinkingMinimal": "#82878c",
+    "thinkingLow": "#58a6ff",
+    "thinkingMedium": "#58a6ff",
+    "thinkingHigh": "#d2a8ff",
+    "thinkingXhigh": "#bc8cff",
+
+    "bashMode": "#e98a4a"
+  }
+}

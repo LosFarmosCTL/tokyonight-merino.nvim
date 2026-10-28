@@ -1,15 +1,16 @@
-# Vim ColorScheme
+# Merino for Vim
 
-Clone the repo somewhere.
-
-```sh
-git clone https://github.com/folke/tokyonight.nvim ~/projects/tokyonight.nvim
-```
-
-Add the below to your `~/.vimrc` file.
+Clone the repository and add the exported Vim runtime to your `.vimrc`:
 
 ```vim
 set termguicolors
-set rtp+=~/projects/tokyonight.nvim/extras/vim
-colorscheme tokyonight
+set runtimepath+=/path/to/tokyonight-merino/extras/vim
+colorscheme tokyonight-merino
 ```
+
+The dispatcher selects `tokyonight-merino-dark.vim` or
+`tokyonight-merino-light.vim` using `background`. Changing
+`:set background=light` or `:set background=dark` switches the appearance.
+
+For Neovim, use the repository's main Lua colorscheme instead. The Vim exports
+contain classic highlight groups and do not require Lua.

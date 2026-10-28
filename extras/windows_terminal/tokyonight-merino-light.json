@@ -1,0 +1,23 @@
+{
+    "background": "#ffffff",
+    "black": "#24292f",
+    "blue": "#0969da",
+    "brightBlack": "#57606a",
+    "brightBlue": "#218bff",
+    "brightCyan": "#3192aa",
+    "brightGreen": "#1a7f37",
+    "brightPurple": "#a475f9",
+    "brightRed": "#a40e26",
+    "brightWhite": "#8c959f",
+    "brightYellow": "#c47a00",
+    "cursorColor": "#0969da",
+    "cyan": "#1b7c83",
+    "foreground": "#1f2328",
+    "green": "#116329",
+    "name": "TokyoNight Merino Light",
+    "purple": "#8250df",
+    "red": "#cf222e",
+    "selectionBackground": "#cecfd0",
+    "white": "#6e7781",
+    "yellow": "#9d5c00"
+}

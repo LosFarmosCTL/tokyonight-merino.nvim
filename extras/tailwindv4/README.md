@@ -1,36 +1,21 @@
-# Tokyo Night for Tailwind CSS v4
+# Merino for Tailwind CSS v4
 
-The Tokyo Night theme as Tailwind CSS theme color variables. Compatible with version 4 of Tailwind.
+Copy one or both generated files into your project and import them after
+Tailwind:
 
-## Usage
+```css
+@import "tailwindcss";
+@import "./tokyonight-merino-dark.css";
+@import "./tokyonight-merino-light.css";
+```
 
-1. Copy the theme CSS file(s) to your project.
+The appearances have separate variable namespaces, so both can coexist:
 
-2. Import in the CSS file to be processed by Tailwind CSS.
+```html
+<button class="bg-tokyonight-merino-dark-bg text-tokyonight-merino-dark-fg">
+  Example
+</button>
+```
 
-   ```css
-   /* styles.css or whatever your CSS file is named */
-   @import "tailwindcss";
-
-   @import "./tokyonight_day.css";
-   @import "./tokyonight_moon.css";
-   @import "./tokyonight_night.css";
-   @import "./tokyonight_storm.css";
-   ```
-
-3. Use the theme's colors where ever you would normally reference colors.
-
-   ```html
-   <button class="border border-tokyonight-moon-border bg-tokyonight-moon-bg text-tokyonight-moon-fg">
-     Click me!
-   </button>
-   ```
-
-## Demos
-
-Demos for each theme are available on Tailwind CSS's web playground:
-
-- [tokyonight_day](https://play.tailwindcss.com/kHihIJmxtf)
-- [tokyonight_moon](https://play.tailwindcss.com/8yI7iYjuFj)
-- [tokyonight_night](https://play.tailwindcss.com/L91QMbz7XU)
-- [tokyonight_storm](https://play.tailwindcss.com/9mZNmRRIVQ)
+Use `tokyonight-merino-light-` utilities for the light palette. Semantic surface
+variables follow the same values as the Neovim theme.

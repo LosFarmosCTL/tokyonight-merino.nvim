@@ -1,0 +1,21 @@
+// TokyoNight Merino Zellij Colors
+// Add this file to your `CONFIG_DIR/themes` directory as described here:
+// https://zellij.dev/documentation/themes#getting-zellij-to-pick-up-the-theme
+
+themes {
+    tokyonight-merino-light {
+        fg "#1f2328"
+        bg "#e9e9ea"
+        // Black should match the terminal background color
+        // This ensures the top and bottom bars are transparent
+        black "#ffffff"
+        red "#cf222e"
+        green "#116329"
+        yellow "#9d5c00"
+        blue "#0969da"
+        magenta "#8250df"
+        cyan "#1b7c83"
+        white "#696d71"
+        orange "#b63f17"
+    }
+}

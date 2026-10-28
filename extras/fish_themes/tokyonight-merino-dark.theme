@@ -1,0 +1,25 @@
+# TokyoNight Merino
+
+# Syntax Highlighting Colors
+fish_color_normal e6edf3
+fish_color_command 39c5cf
+fish_color_keyword d2a8ff
+fish_color_quote d29922
+fish_color_redirection e6edf3
+fish_color_end e98a4a
+fish_color_option d2a8ff
+fish_color_error ff7b72
+fish_color_param bc8cff
+fish_color_comment 82878c
+fish_color_selection --background=383d43
+fish_color_search_match --background=383d43
+fish_color_operator a3bd8d
+fish_color_escape d2a8ff
+fish_color_autosuggestion 82878c
+
+# Completion Pager Colors
+fish_pager_color_progress 82878c
+fish_pager_color_prefix 39c5cf
+fish_pager_color_completion e6edf3
+fish_pager_color_description 82878c
+fish_pager_color_selected_background --background=383d43

@@ -1,0 +1,107 @@
+*tokyonight-merino.txt*  Merino for Neovim, based on TokyoNight
+
+=============================================================================
+INTRODUCTION                                             *tokyonight-merino*
+
+TokyoNight Merino provides one colorscheme with light and dark appearances,
+using Rex's Merino colors and TokyoNight's syntax and plugin highlights.
+Requires Neovim 0.10 or newer with true-color terminal support.
+
+Load the colorscheme: >vim
+    colorscheme tokyonight-merino
+<
+Set 'background' to select the appearance: >vim
+    set background=light
+    set background=dark
+<
+Changing 'background' reloads the same colorscheme with the matching palette.
+
+=============================================================================
+CONFIGURATION                                      *tokyonight-merino-setup*
+
+Call setup before loading the colorscheme. Setup is optional when using the
+defaults. The Lua module is named "tokyonight-merino". >lua
+    require("tokyonight-merino").setup({
+      transparent = false,
+      terminal_colors = true,
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = {},
+        variables = {},
+        sidebars = "dark",
+        floats = "dark",
+      },
+      dim_inactive = false,
+      lualine_bold = false,
+      cache = true,
+      plugins = { auto = true },
+      on_colors = function(colors) end,
+      on_highlights = function(highlights, colors) end,
+    })
+    vim.cmd.colorscheme("tokyonight-merino")
+<
+transparent       Omits the main editor background.
+terminal_colors   Sets all 16 ANSI colors for embedded terminals.
+styles            Syntax styles accept |nvim_set_hl()| attributes. Background
+                  styles accept "dark" (distinct Merino surface), "normal"
+                  (editor background), or "transparent". "dark" applies in
+                  both light and dark appearances.
+dim_inactive      Uses a separate background for inactive windows.
+lualine_bold      Makes lualine mode headers bold.
+cache             Caches highlights separately for each appearance.
+plugins           "all" defaults to true without lazy.nvim, false with it.
+                  "auto" detects lazy.nvim plugins. Individual plugins can be
+                  enabled or disabled by group name or repository name.
+on_colors         Overrides the constructed palette before highlights are made.
+on_highlights     Overrides generated highlights, including cached highlights.
+
+For example: >lua
+    require("tokyonight-merino").setup({
+      plugins = { all = false, auto = false, telescope = true },
+      on_colors = function(colors)
+        colors.comment = "#808080"
+      end,
+      on_highlights = function(highlights, colors)
+        highlights.CursorLine = { bg = colors.bg_visual }
+      end,
+    })
+<
+There are no style, light_style, or day_brightness options. The palette is
+always Merino, selected by 'background'.
+
+=============================================================================
+INTEGRATIONS                                *tokyonight-merino-integrations*
+
+Plugin highlight modules and the complete registry live in
+lua/tokyonight-merino/groups/. Core, Tree-sitter, and LSP highlights are always
+enabled. Plugin highlights support manual selection and lazy.nvim detection.
+
+Lualine: >lua
+    require("lualine").setup({ options = { theme = "tokyonight-merino" } })
+<
+Barbecue: set theme = "tokyonight-merino" in its options.
+
+Lightline uses an underscore in its Vimscript autoload identifier: >vim
+    let g:lightline = {'colorscheme': 'tokyonight_merino'}
+<
+EXTERNAL APPLICATIONS                              *tokyonight-merino-extras*
+
+The extras/ directory contains light and dark Merino exports for terminal
+emulators, shells, Git tools, editors, and other applications. See its README
+for the complete catalogue and import notes. Filenames use
+tokyonight-merino-dark and tokyonight-merino-light with format-specific suffixes.
+
+After editing the palette, highlights, or generators, regenerate exports with
+./scripts/build. It uses the same Lua palette and highlights as Neovim with
+the theme defaults. Generators are in lua/tokyonight-merino/extra/.
+These are separate application themes, not additional Neovim variants.
+
+The Update extras workflow also runs on main and opens or updates a PR for
+generated changes. Enable Actions PR creation in the repository settings;
+see README.md for the setting and manual workflow trigger.
+
+Based on TokyoNight by folke; inherited code uses the Apache 2.0 license.
+Merino is from Superlogical Rex. This is an independent adaptation.
+
+vim:tw=78:ts=8:noet:ft=help:norl:

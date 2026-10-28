@@ -1,0 +1,48 @@
+name: Update extras
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-extras
+  cancel-in-progress: false
+
+jobs:
+  extras:
+    if: github.repository == 'LosFarmosCTL/tokyonight-merino'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: stable
+      - name: Install upstream test-build dependency
+        run: sudo apt-get update && sudo apt-get install -y libreadline-dev
+      - name: Run tests
+        run: ./scripts/test
+      - name: Regenerate Merino extras
+        run: ./scripts/build
+      - name: Open or update extras pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          base: main
+          branch: automation/update-extras
+          delete-branch: true
+          add-paths: extras/
+          commit-message: "chore: regenerate Merino extras"
+          title: "chore: update generated Merino extras"
+          body: |
+            Regenerates the external-application themes from the current Merino palette,
+            highlight definitions, and export templates on main.
+
+            Validation: ran ./scripts/test and ./scripts/build.

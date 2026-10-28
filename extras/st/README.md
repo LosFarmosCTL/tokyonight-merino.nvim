@@ -1,13 +1,6 @@
-<h3 align="center">
-	Tokyonight for <a href="https://st.suckless.org/">st</a>
-</h3>
+# Merino for st
 
-### About
-
-This port offers the colors needed for ST's header file.
-
-### Usage
-
-1. Choose your flavour.
-2. Copy the contents of `flavor.h` and replace into your st build's `config.h`.
-3. Then `make install` it in st folder.
+Replace the color definitions in your st `config.h` with the contents of
+`tokyonight-merino-dark.h` or `tokyonight-merino-light.h`, then rebuild st.
+Replace the existing `colorname` array and default color indices together;
+do not append a second set of definitions.

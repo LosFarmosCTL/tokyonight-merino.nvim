@@ -1,14 +1,14 @@
 local M = {
-  module = "tokyonight",
-  colorscheme = "tokyonight",
-  opts = { style = "moon", plugins = { all = true } },
+  module = "tokyonight-merino",
+  colorscheme = "tokyonight-merino",
+  opts = { plugins = { all = true } },
   globals = { vim = vim },
   cache = {}, ---@type table<string, boolean>
 }
 
 function M.reset()
-  require("tokyonight.util").cache.clear()
-  local colors = require("tokyonight.colors").setup()
+  require("tokyonight-merino.util").cache.clear()
+  local colors = require("tokyonight-merino.colors").setup()
   M.globals.colors = colors
   M.globals.c = colors
 end
@@ -21,7 +21,7 @@ end
 
 local function reload()
   for k in pairs(package.loaded) do
-    if k:find("^" .. M.module) then
+    if k == M.module or k:find(M.module .. ".", 1, true) == 1 then
       package.loaded[k] = nil
     end
   end
@@ -29,7 +29,7 @@ local function reload()
   require(M.module).setup(M.opts)
   M.reset()
   local colorscheme = vim.g.colors_name or M.colorscheme
-  colorscheme = colorscheme:find(M.colorscheme) and colorscheme or M.colorscheme
+  colorscheme = colorscheme:find(M.colorscheme, 1, true) and colorscheme or M.colorscheme
   vim.cmd.colorscheme(colorscheme)
   local hi = require("mini.hipatterns")
   for _, buf in ipairs(require("mini.hipatterns").get_enabled_buffers()) do
@@ -63,7 +63,7 @@ return {
 
         hl_group = {
           pattern = function(buf)
-            return vim.api.nvim_buf_get_name(buf):find("lua/" .. M.module) and '^%s*%[?"?()[%w%.@]+()"?%]?%s*='
+            return vim.api.nvim_buf_get_name(buf):find("lua/" .. M.module, 1, true) and '^%s*%[?"?()[%w%.@]+()"?%]?%s*='
           end,
           group = function(buf, match)
             local group = M.hl_group(match, buf)

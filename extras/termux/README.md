@@ -1,7 +1,5 @@
-## Tokyonight for [termux](https://termux.dev/)
+# Merino for Termux
 
-### Usage
-
-1. Choose your flavour.
-2. Copy the contents of `tokyonight_flavour.properties` to `~/.termux/colors.properties`.
-3. Then run `termux-reload-settings` or restart termux.
+Copy `tokyonight-merino-dark.properties` or
+`tokyonight-merino-light.properties` to `~/.termux/colors.properties`.
+Run `termux-reload-settings` or restart Termux to apply it.

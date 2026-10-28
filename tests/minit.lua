@@ -14,6 +14,7 @@ require("lazy.minit").setup({
   spec = {
     {
       dir = vim.uv.cwd(),
+      main = "tokyonight-merino",
       opts = {},
     },
   },
