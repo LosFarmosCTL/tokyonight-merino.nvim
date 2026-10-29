@@ -81,4 +81,4 @@ It reads the same Lua palette and highlights as Neovim, using the theme defaults
 and updates every light and dark export. Run it from the repository root;
 it uses the upstream lazy.nvim bootstrap with dependencies under `.tests/`.
 The Update extras workflow also regenerates these files after changes land on
-`main`, opening or updating a PR when exports change. See the root README for setup.
+`main`, opening or updating a PR when exports change.
