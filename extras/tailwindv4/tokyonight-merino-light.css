@@ -26,10 +26,10 @@
   --color-tokyonight-merino-light-cyan-bright: oklch(from #3192aa l c h);
   --color-tokyonight-merino-light-dark3: oklch(from #878a8e l c h);
   --color-tokyonight-merino-light-dark5: oklch(from #696d71 l c h);
-  --color-tokyonight-merino-light-diff-add: oklch(from #e5ede6 l c h);
-  --color-tokyonight-merino-light-diff-change: oklch(from #e6effc l c h);
-  --color-tokyonight-merino-light-diff-delete: oklch(from #fee9e7 l c h);
-  --color-tokyonight-merino-light-diff-text: oklch(from #b9d4f5 l c h);
+  --color-tokyonight-merino-light-diff-add: oklch(from #e1ebe9 l c h);
+  --color-tokyonight-merino-light-diff-change: oklch(from #f0f6fd l c h);
+  --color-tokyonight-merino-light-diff-delete: oklch(from #f9e2e4 l c h);
+  --color-tokyonight-merino-light-diff-text: oklch(from #d0e3f8 l c h);
   --color-tokyonight-merino-light-error: var(--color-tokyonight-merino-light-red1);
   --color-tokyonight-merino-light-fg: oklch(from #1f2328 l c h);
   --color-tokyonight-merino-light-fg-dark: oklch(from #696d71 l c h);

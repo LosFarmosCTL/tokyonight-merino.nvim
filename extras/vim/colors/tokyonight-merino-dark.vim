@@ -48,10 +48,10 @@ hi DiagnosticVirtualTextHint guibg=#112329 guifg=#39c5cf
 hi DiagnosticVirtualTextInfo guibg=#15202e guifg=#58a6ff
 hi DiagnosticVirtualTextWarn guibg=#211f18 guifg=#d29922
 hi DiagnosticWarn guibg=NONE guifg=#d29922
-hi DiffAdd guibg=#162822
-hi DiffChange guibg=#182536
-hi DiffDelete guibg=#2e2125
-hi DiffText guibg=#253f5e
+hi DiffAdd guibg=#243235
+hi DiffChange guibg=#121a25
+hi DiffDelete guibg=#392427
+hi DiffText guibg=#1f354f
 hi Directory guibg=NONE guifg=#58a6ff
 hi EndOfBuffer guibg=NONE guifg=#0d1117
 hi Error guibg=NONE guifg=#ff7b72
@@ -169,9 +169,9 @@ hi ModeMsg gui=bold guibg=NONE guifg=#82878c
 hi MoreMsg guibg=NONE guifg=#58a6ff
 hi MsgArea guibg=NONE guifg=#82878c
 hi NeogitBranch guibg=NONE guifg=#d2a8ff
-hi NeogitDiffAddHighlight guibg=#162822 guifg=#3fb950
+hi NeogitDiffAddHighlight guibg=#243235 guifg=#3fb950
 hi NeogitDiffContextHighlight guibg=#1e2126 guifg=#82878c
-hi NeogitDiffDeleteHighlight guibg=#2e2125 guifg=#ff7b72
+hi NeogitDiffDeleteHighlight guibg=#392427 guifg=#ff7b72
 hi NeogitHunkHeader guibg=#1a1e24 guifg=#e6edf3
 hi NeogitHunkHeaderHighlight guibg=#2e3135 guifg=#58a6ff
 hi NeogitRemote guibg=NONE guifg=#bc8cff
@@ -252,14 +252,14 @@ hi WildMenu guibg=#383d43
 hi WinSeparator gui=bold guibg=NONE guifg=#2e3135
 hi debugBreakpoint guibg=#15202e guifg=#58a6ff
 hi debugPC guibg=#0a0e12
-hi diffAdded guibg=#162822 guifg=#3fb950
-hi diffChanged guibg=#182536 guifg=#58a6ff
+hi diffAdded guibg=#243235 guifg=#3fb950
+hi diffChanged guibg=#121a25 guifg=#58a6ff
 hi diffFile guibg=NONE guifg=#58a6ff
 hi diffIndexLine guibg=NONE guifg=#d2a8ff
 hi diffLine guibg=NONE guifg=#82878c
-hi diffNewFile guibg=#162822 guifg=#39c5cf
-hi diffOldFile guibg=#2e2125 guifg=#39c5cf
-hi diffRemoved guibg=#2e2125 guifg=#ff7b72
+hi diffNewFile guibg=#243235 guifg=#39c5cf
+hi diffOldFile guibg=#392427 guifg=#39c5cf
+hi diffRemoved guibg=#392427 guifg=#ff7b72
 hi healthError guibg=NONE guifg=#ff7b72
 hi healthSuccess guibg=NONE guifg=#80b7ad
 hi healthWarning guibg=NONE guifg=#d29922

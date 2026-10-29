@@ -14,10 +14,10 @@ constructor = { fg = "#39c5cf" }
 "diagnostic.hint" = { underline = { color = "#39c5cf", style = "curl" } }
 "diagnostic.info" = { underline = { color = "#58a6ff", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "#d29922", style = "curl" } }
-"diff.delta" = { bg = "#182536", fg = "#58a6ff" }
+"diff.delta" = { bg = "#121a25", fg = "#58a6ff" }
 "diff.delta.moved" = { fg = "#58a6ff" }
-"diff.minus" = { bg = "#2e2125", fg = "#ff7b72" }
-"diff.plus" = { bg = "#162822", fg = "#3fb950" }
+"diff.minus" = { bg = "#392427", fg = "#ff7b72" }
+"diff.plus" = { bg = "#243235", fg = "#3fb950" }
 error = { fg = "#ff7b72" }
 function = { fg = "#58a6ff" }
 "function.builtin" = { fg = "#39c5cf" }
@@ -113,10 +113,11 @@ cursor_text = "#eff8ff"
 cyan = "#39c5cf"
 dark3 = "#666a6f"
 dark5 = "#82878c"
-"diff.add" = "#162822"
-"diff.change" = "#182536"
-"diff.delete" = "#2e2125"
-"diff.text" = "#253f5e"
+"diff.add" = "#243235"
+"diff.change" = "#121a25"
+"diff.delete" = "#392427"
+"diff.filler" = "#32373c"
+"diff.text" = "#1f354f"
 error = "#ff7b72"
 fg = "#e6edf3"
 fg_dark = "#82878c"

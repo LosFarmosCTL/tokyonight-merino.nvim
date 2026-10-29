@@ -30,10 +30,11 @@ local colors = {
   dark3 = "#666a6f",
   dark5 = "#82878c",
   diff = {
-    add = "#162822",
-    change = "#182536",
-    delete = "#2e2125",
-    text = "#253f5e"
+    add = "#243235",
+    change = "#121a25",
+    delete = "#392427",
+    filler = "#32373c",
+    text = "#1f354f"
   },
   error = "#ff7b72",
   fg = "#e6edf3",
@@ -963,17 +964,83 @@ local highlights = {
   },
   DiagnosticWarning = "DiagnosticWarn",
   DiffAdd = {
-    bg = "#162822"
+    bg = "#243235"
   },
   DiffChange = {
-    bg = "#182536"
+    bg = "#121a25"
   },
   DiffDelete = {
-    bg = "#2e2125"
+    bg = "#392427"
   },
   DiffText = {
-    bg = "#253f5e"
+    bg = "#1f354f"
   },
+  DiffviewCursorLine = {
+    bg = "#1a1e24"
+  },
+  DiffviewDiffAdd = "DiffAdd",
+  DiffviewDiffChange = "DiffChange",
+  DiffviewDiffDeleteDim = {
+    bg = "#0d1117",
+    fg = "#32373c"
+  },
+  DiffviewDiffText = "DiffText",
+  DiffviewFilePanelCounter = {
+    fg = "#82878c"
+  },
+  DiffviewFilePanelDeletions = {
+    fg = "#ff7b72"
+  },
+  DiffviewFilePanelFileName = {
+    fg = "#e6edf3"
+  },
+  DiffviewFilePanelInsertions = {
+    fg = "#3fb950"
+  },
+  DiffviewFilePanelPath = {
+    fg = "#82878c"
+  },
+  DiffviewFilePanelRootPath = {
+    fg = "#82878c"
+  },
+  DiffviewFilePanelSelected = {
+    bold = true,
+    fg = "#39c5cf"
+  },
+  DiffviewFilePanelTitle = {
+    bold = true,
+    fg = "#58a6ff"
+  },
+  DiffviewFolderName = {
+    fg = "#58a6ff"
+  },
+  DiffviewFolderSign = {
+    fg = "#39c5cf"
+  },
+  DiffviewNormal = {
+    bg = "#0a0e12",
+    fg = "#82878c"
+  },
+  DiffviewStatusAdded = "DiffviewFilePanelInsertions",
+  DiffviewStatusBroken = "DiffviewFilePanelDeletions",
+  DiffviewStatusCopied = {
+    fg = "#58a6ff"
+  },
+  DiffviewStatusDeleted = "DiffviewFilePanelDeletions",
+  DiffviewStatusModified = {
+    fg = "#58a6ff"
+  },
+  DiffviewStatusRenamed = {
+    fg = "#58a6ff"
+  },
+  DiffviewStatusTypeChange = {
+    fg = "#58a6ff"
+  },
+  DiffviewStatusUnknown = "DiffviewFilePanelDeletions",
+  DiffviewStatusUnmerged = {
+    fg = "#58a6ff"
+  },
+  DiffviewStatusUntracked = "DiffviewFilePanelInsertions",
   Directory = {
     fg = "#58a6ff"
   },
@@ -1886,7 +1953,7 @@ local highlights = {
     fg = "#d2a8ff"
   },
   NeogitDiffAddHighlight = {
-    bg = "#162822",
+    bg = "#243235",
     fg = "#3fb950"
   },
   NeogitDiffContextHighlight = {
@@ -1894,7 +1961,7 @@ local highlights = {
     fg = "#82878c"
   },
   NeogitDiffDeleteHighlight = {
-    bg = "#2e2125",
+    bg = "#392427",
     fg = "#ff7b72"
   },
   NeogitHunkHeader = {
@@ -2817,11 +2884,11 @@ local highlights = {
     bg = "#0a0e12"
   },
   diffAdded = {
-    bg = "#162822",
+    bg = "#243235",
     fg = "#3fb950"
   },
   diffChanged = {
-    bg = "#182536",
+    bg = "#121a25",
     fg = "#58a6ff"
   },
   diffFile = {
@@ -2834,15 +2901,15 @@ local highlights = {
     fg = "#82878c"
   },
   diffNewFile = {
-    bg = "#162822",
+    bg = "#243235",
     fg = "#39c5cf"
   },
   diffOldFile = {
-    bg = "#2e2125",
+    bg = "#392427",
     fg = "#39c5cf"
   },
   diffRemoved = {
-    bg = "#2e2125",
+    bg = "#392427",
     fg = "#ff7b72"
   },
   dosIniLabel = "@property",

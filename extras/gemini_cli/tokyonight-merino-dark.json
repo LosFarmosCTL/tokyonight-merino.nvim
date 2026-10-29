@@ -11,8 +11,8 @@
   "background": {
     "primary": "#0d1117",
     "diff": {
-      "added": "#162822",
-      "removed": "#2e2125"
+      "added": "#243235",
+      "removed": "#392427"
     }
   },
   "border": {
@@ -38,8 +38,8 @@
   "AccentGreen": "#a3bd8d",
   "AccentYellow": "#d29922",
   "AccentRed": "#ff7b72",
-  "DiffAdded": "#162822",
-  "DiffRemoved": "#2e2125",
+  "DiffAdded": "#243235",
+  "DiffRemoved": "#392427",
   "Comment": "#82878c",
   "Gray": "#82878c",
   "DarkGray": "#0a0e12",

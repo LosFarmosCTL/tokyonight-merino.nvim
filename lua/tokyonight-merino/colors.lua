@@ -85,11 +85,16 @@ function M.setup(opts)
   colors.bg_search = ui.accent_container
   colors.fg_sidebar = colors.fg_dark
   colors.fg_float = colors.fg
+  -- Diff fills share a canvas and contrast hierarchy rather than alert surfaces.
+  -- Lift that canvas slightly in transparent terminals so fills do not sink
+  -- below the terminal's visible backdrop.
+  local diff_bg = opts.transparent and Util.blend(colors.fg, light and 0.025 or 0.06, colors.bg) or colors.bg
   colors.diff = {
-    add = ui.success_container,
-    delete = ui.danger_container,
-    change = ui.info_container,
-    text = Util.blend(ui.info, 0.2, ui.info_container),
+    add = Util.blend(colors.green1, light and 0.15 or 0.20, diff_bg),
+    delete = Util.blend(colors.red1, light and 0.13 or 0.18, diff_bg),
+    change = Util.blend(colors.blue, 0.06, diff_bg),
+    text = Util.blend(colors.blue, light and 0.19 or 0.24, diff_bg),
+    filler = Util.blend(colors.comment, light and 0.35 or 0.32, diff_bg),
   }
   colors.error = colors.red1
   colors.todo = colors.blue

@@ -37,9 +37,9 @@
     "mdHr": "#e98a4a",
     "mdListBullet": "#e98a4a",
 
-    "toolDiffAdded": "#162822",
-    "toolDiffRemoved": "#2e2125",
-    "toolDiffContext": "#253f5e",
+    "toolDiffAdded": "#243235",
+    "toolDiffRemoved": "#392427",
+    "toolDiffContext": "#1f354f",
 
     "syntaxComment": "#82878c",
     "syntaxKeyword": "#bc8cff",
