@@ -58,7 +58,6 @@ require("tokyonight-merino").setup({
     keywords = { italic = true },
     functions = {},
     variables = {},
-    -- "dark" uses a distinct Merino surface in either appearance.
     -- Also accepts "normal" (editor background) or "transparent".
     sidebars = "dark",
     floats = "dark",

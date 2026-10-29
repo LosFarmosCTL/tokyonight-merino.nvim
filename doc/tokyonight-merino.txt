@@ -31,6 +31,7 @@ defaults. The Lua module is named "tokyonight-merino". >lua
         variables = {},
         sidebars = "dark",
         floats = "dark",
+        statusline = "dark",
       },
       dim_inactive = false,
       lualine_bold = false,
@@ -41,12 +42,16 @@ defaults. The Lua module is named "tokyonight-merino". >lua
     })
     vim.cmd.colorscheme("tokyonight-merino")
 <
-transparent       Omits the main editor background.
+transparent       Omits the main editor background and Markdown heading fills.
+                  Code blocks and inline code keep faint neutral backgrounds.
+                  These fills are solid colors; in-buffer highlights cannot
+                  use per-region opacity.
 terminal_colors   Sets all 16 ANSI colors for embedded terminals.
 styles            Syntax styles accept |nvim_set_hl()| attributes. Background
-                  styles accept "dark" (distinct Merino surface), "normal"
-                  (editor background), or "transparent". "dark" applies in
-                  both light and dark appearances.
+                  styles accept "dark" (one shared surface, slightly sunken
+                  below the editor background), "normal" (editor background),
+                  or "transparent". "dark" applies in both light and dark
+                  appearances.
 dim_inactive      Uses a separate background for inactive windows.
 lualine_bold      Makes lualine mode headers bold.
 cache             Caches highlights separately for each appearance.

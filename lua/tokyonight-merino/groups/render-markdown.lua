@@ -9,14 +9,14 @@ function M.get(c, opts)
   -- stylua: ignore
   local ret = {
     RenderMarkdownBullet    = {fg = c.orange}, -- horizontal rule
-    RenderMarkdownCode      = { bg = c.bg_dark },
+    RenderMarkdownCode      = { bg = c.bg_code },
     RenderMarkdownDash      = {fg = c.orange}, -- horizontal rule
     RenderMarkdownTableHead = { fg = c.red},
     RenderMarkdownTableRow  = { fg = c.orange},
     RenderMarkdownCodeInline = "@markup.raw.markdown_inline"
   }
   for i, color in ipairs(c.rainbow) do
-    ret["RenderMarkdownH" .. i .. "Bg"] = { bg = Util.blend_bg(color, 0.1) }
+    ret["RenderMarkdownH" .. i .. "Bg"] = { bg = opts.transparent and c.none or Util.blend_bg(color, 0.05) }
     ret["RenderMarkdownH" .. i .. "Fg"] = { fg = color, bold = true }
   end
   return ret

@@ -8,11 +8,11 @@ M.url = "https://github.com/lukas-reineke/headlines.nvim"
 function M.get(c, opts)
   -- stylua: ignore
   local ret = {
-    CodeBlock = { bg = c.bg_dark },
+    CodeBlock = { bg = c.bg_code },
     Headline  = "Headline1",
   }
   for i, color in ipairs(c.rainbow) do
-    ret["Headline" .. i] = { bg = Util.blend_bg(color, 0.05) }
+    ret["Headline" .. i] = { bg = opts.transparent and c.none or Util.blend_bg(color, 0.05) }
   end
   return ret
 end

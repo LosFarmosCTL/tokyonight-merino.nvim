@@ -1,7 +1,7 @@
 (
   selected_tab: Some("#d2a8ff"),
   command_fg: Some("#82878c"),
-  selection_bg: Some("#23272d"),
+  selection_bg: Some("#1a1e24"),
   selection_fg: Some("#39c5cf"),
   cmdbar_bg: Some("#0d1117"),
   cmdbar_extra_lines_bg: Some("#0d1117"),

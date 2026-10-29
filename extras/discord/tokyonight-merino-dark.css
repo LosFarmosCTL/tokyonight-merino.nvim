@@ -12,19 +12,19 @@
   --text-brand: #58a6ff;
   --background-primary: #0d1117;
   --bg-base-primary: #0d1117;
-  --background-secondary: #131519;
-  --background-secondary-alt: #131519;
-  --background-tertiary: #0c0e11;
+  --background-secondary: #0a0e12;
+  --background-secondary-alt: #0a0e12;
+  --background-tertiary: #0a0d11;
   --background-accent: #142134;
-  --background-floating: #1e2023;
-  --background-nested-floating: #131519;
+  --background-floating: #0a0e12;
+  --background-nested-floating: #0a0e12;
   --background-mobile-primary: #0d1117;
-  --background-mobile-secondary: #131519;
-  --bg-base-secondary: #131519;
-  --bg-surface-raised: #131519;
+  --background-mobile-secondary: #0a0e12;
+  --bg-base-secondary: #0a0e12;
+  --bg-surface-raised: #0a0e12;
   --home-background: #0d1117;
   --chat-background: #0d1117;
-  --chat-border: #23272d;
+  --chat-border: #1a1e24;
   --chat-input-container-background: #0d1117;
   --background-modifier-hover: #666a6f26;
   --background-modifier-selected: #666a6f32;
@@ -60,7 +60,7 @@
   --status-red-500: #ff7b72;
   --status-red-530: #ff7b72;
   --status-yellow-500: #d29922;
-  --black-500: #23272d;
+  --black-500: #1a1e24;
   --green-360: #39c5cf;
   --yellow-360: #d29922;
   --yellow-300: #d29922;
@@ -68,8 +68,8 @@
   --primary-100: #82878c;
   --primary-300: #82878c;
   --primary-400: #82878c;
-  --primary-dark-700: #23272d;
-  --primary-800: #23272d;
+  --primary-dark-700: #1a1e24;
+  --primary-800: #1a1e24;
   --status-green-560: #39c5cf;
   --white-400: #e6edf3;
   --white-500: #e6edf3;
@@ -132,14 +132,14 @@
   --button-outline-primary-text-active: #0d1117;
   --button-outline-primary-border-active: #666a6f;
   --modal-background: #0d1117;
-  --modal-footer-background: #23272d;
+  --modal-footer-background: #1a1e24;
   --scrollbar-thin-thumb: #58a6ff;
   --scrollbar-thin-track: transparent;
   --scrollbar-auto-thumb: #58a6ff;
-  --scrollbar-auto-track: #23272d;
+  --scrollbar-auto-track: #1a1e24;
   --scrollbar-auto-scrollbar-color-thumb: #58a6ff;
-  --scrollbar-auto-scrollbar-color-track: #23272d;
-  --input-background: #23272d;
+  --scrollbar-auto-scrollbar-color-track: #1a1e24;
+  --input-background: #1a1e24;
   --input-placeholder-text: #82878c;
   --logo-primary: #e6edf3;
   --control-brand-foreground: #58a6ff;
@@ -148,7 +148,7 @@
   --mention-background: #6e7681;
   --background-mentioned: #d2992219;
   --background-mentioned-hover: #d2992214;
-  --background-message-hover: #1315193F;
+  --background-message-hover: #0a0e123F;
   --background-message-automod: #d2a8ff0C;
   --background-message-automod-hover: #d2a8ff19;
   --background-message-highlight: #58a6ff14;
@@ -156,14 +156,14 @@
   --channels-default: #82878c;
   --channel-icon: #58a6ff99;
   --channel-text-area-placeholder: #666a6f7F;
-  --channeltextarea-background: #131519;
-  --activity-card-background: #23272d;
+  --channeltextarea-background: #0a0e12;
+  --activity-card-background: #1a1e24;
   --textbox-markdown-syntax: #e6edf3;
-  --spoiler-revealed-background: #23272d;
+  --spoiler-revealed-background: #1a1e24;
   --spoiler-hidden-background: #82878c;
-  --android-navigation-bar-background: #23272d;
+  --android-navigation-bar-background: #1a1e24;
   --android-ripple: #0d11174C;
-  --bg-mod-faint: #131519;
+  --bg-mod-faint: #0a0e12;
   --bg-mod-subtle: #6e7681;
   --focus-primary: #58a6ff;
   --interactive-normal: #e6edf3;
@@ -176,12 +176,12 @@
 }
 
 div[class*="autocomplete_"] {
-    background-color: #1e2023 !important;
+    background-color: #0a0e12 !important;
 }
 
 div[class*="autocomplete_"]
 div[class*="categoryHeader"] {
-    background-color: #1e2023 !important;
+    background-color: #0a0e12 !important;
 }
 
 rect[mask="url(#svg-mask-status-online)"] {

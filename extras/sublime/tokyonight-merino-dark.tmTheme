@@ -36,13 +36,13 @@
 				<key>invisibles</key>
 				<string>#666a6f</string>
 				<key>lineHighlight</key>
-				<string>#23272d</string>
+				<string>#1a1e24</string>
 				<key>selection</key>
 				<string>#383d43</string>
 				<key>selectionBorder</key>
 				<string>#424549</string>
 				<key>shadow</key>
-				<string>#131519</string>
+				<string>#0a0e12</string>
 				<key>stackGuide</key>
 				<string>#2e3135</string>
 				<key>tagsOptions</key>

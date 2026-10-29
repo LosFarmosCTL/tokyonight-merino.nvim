@@ -63,7 +63,7 @@ function M.get(c, opts)
     ["@markup.list.unchecked"]      = { fg = c.blue }, -- For brackets and parens.
     ["@markup.math"]                = "Special",
     ["@markup.raw"]                 = "String",
-    ["@markup.raw.markdown_inline"] = { bg = c.terminal_black, fg = c.blue },
+    ["@markup.raw.markdown_inline"] = { bg = c.bg_inline, fg = c.blue },
     ["@markup.strikethrough"]       = { strikethrough = true },
     ["@markup.strong"]              = { bold = true },
     ["@markup.underline"]           = { underline = true },
@@ -101,7 +101,8 @@ function M.get(c, opts)
   }
 
   for i, color in ipairs(c.rainbow) do
-    ret["@markup.heading." .. i .. ".markdown"] = { fg = color, bold = true, bg = Util.blend_bg(color, 0.1) }
+    ret["@markup.heading." .. i .. ".markdown"] =
+      { fg = color, bold = true, bg = opts.transparent and c.none or Util.blend_bg(color, 0.05) }
   end
   return ret
 end

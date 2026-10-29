@@ -5,7 +5,7 @@ assistant-output-color: "#1f2328"
 # Keep a built-in code-theme of your choice; this export does not include a Pygments plugin.
 
 completion-menu-color: "#1f2328"
-completion-menu-bg-color: "#fafbfc"
+completion-menu-bg-color: "#f0f0f0"
 completion-menu-current-color: "#1f2328"
 completion-menu-current-bg-color: "#e9e9ea"
 

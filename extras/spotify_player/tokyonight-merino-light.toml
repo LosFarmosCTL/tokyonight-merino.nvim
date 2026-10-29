@@ -1,7 +1,7 @@
 [[themes]]
 name = "TokyoNight Merino Light"
 [themes.palette]
-background = "#eceef2"
+background = "#f0f0f0"
 foreground = "#696d71"
 black = "#24292f"
 red = "#cf222e"

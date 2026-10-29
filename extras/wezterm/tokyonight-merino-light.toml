@@ -14,11 +14,11 @@ ansi = ["#24292f", "#cf222e", "#116329", "#9d5c00", "#0969da", "#8250df", "#1b7c
 brights = ["#57606a", "#a40e26", "#1a7f37", "#c47a00", "#218bff", "#a475f9", "#3192aa", "#8c959f"]
 
 [colors.tab_bar]
-inactive_tab_edge = "#eceef2"
+inactive_tab_edge = "#f0f0f0"
 background = "#ffffff"
 
 [colors.tab_bar.active_tab]
-fg_color = "#eceef2"
+fg_color = "#f0f0f0"
 bg_color = "#0969da"
 
 [colors.tab_bar.inactive_tab]

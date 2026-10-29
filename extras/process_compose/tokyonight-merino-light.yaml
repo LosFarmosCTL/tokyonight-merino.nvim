@@ -2,7 +2,7 @@ style:
   name: tokyonight-merino-light
   body:
     fgColor: '#1f2328'
-    bgColor: '#eceef2'
+    bgColor: '#f0f0f0'
     secondaryTextColor: '#696d71'
     tertiaryTextColor: '#1f2328'
     borderColor: '#e7e9eb'

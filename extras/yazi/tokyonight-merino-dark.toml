@@ -5,11 +5,11 @@
 cwd = { fg = "#82878c", italic = true }
 
 # Hovered
-hovered         = { bg = "#23272d" }
-preview_hovered = { bg = "#23272d" }
+hovered         = { bg = "#1a1e24" }
+preview_hovered = { bg = "#1a1e24" }
 
 # Find
-find_keyword  = { fg = "#131519", bg = "#e98a4a", bold = true }
+find_keyword  = { fg = "#0a0e12", bg = "#e98a4a", bold = true }
 find_position = { fg = "#58a6ff", bg = "#15202e", bold = true }
 
 # Marker
@@ -19,9 +19,9 @@ marker_marked   = { fg = "#d2a8ff", bg = "#d2a8ff" }
 marker_selected = { fg = "#58a6ff", bg = "#58a6ff" }
 
 # Count
-count_copied   = { fg = "#131519", bg = "#a3bd8d" }
-count_cut      = { fg = "#131519", bg = "#ff7b72" }
-count_selected = { fg = "#131519", bg = "#58a6ff" }
+count_copied   = { fg = "#0a0e12", bg = "#a3bd8d" }
+count_cut      = { fg = "#0a0e12", bg = "#ff7b72" }
+count_selected = { fg = "#0a0e12", bg = "#58a6ff" }
 
 # Border
 border_symbol = "│"
@@ -43,14 +43,14 @@ unset_main  = { fg = "#0d1117", bg = "#bc8cff", bold = true }
 unset_alt   = { fg = "#bc8cff", bg = "#2e3135" }
 
 [status]
-overall   = { fg = "#e6edf3", bg = "#131519" }
+overall   = { fg = "#e6edf3", bg = "#0a0e12" }
 sep_left  = { open = "", close = "" }
 sep_right = { open = "", close = "" }
 
 # Progress
 progress_label  = { fg = "#e6edf3", bold = true }
-progress_normal = { fg = "#58a6ff", bg = "#23272d" }
-progress_error  = { fg = "#ff7b72", bg = "#23272d" }
+progress_normal = { fg = "#58a6ff", bg = "#1a1e24" }
+progress_error  = { fg = "#ff7b72", bg = "#1a1e24" }
 
 # Permissions
 perm_type  = { fg = "#58a6ff" }
@@ -90,7 +90,7 @@ hovered = { fg = "#e6edf3", bg = "#383d43" }
 # Which
 [which]
 cols            = 3
-mask            = { bg = "#131519" }
+mask            = { bg = "#0a0e12" }
 cand            = { fg = "#39c5cf" }
 rest            = { fg = "#58a6ff" }
 desc            = { fg = "#d2a8ff" }
@@ -127,7 +127,7 @@ icon_info = ""
 on      = { fg = "#a3bd8d" }
 run     = { fg = "#d2a8ff" }
 desc    = { fg = "#39c5cf" }
-hovered = { bg = "#23272d" }
+hovered = { bg = "#1a1e24" }
 footer  = { fg = "#e6edf3", bg = "#0d1117" }
 
 [filetype]

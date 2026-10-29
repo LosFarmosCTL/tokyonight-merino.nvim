@@ -12,16 +12,16 @@
   --text-brand: #0969da;
   --background-primary: #ffffff;
   --bg-base-primary: #ffffff;
-  --background-secondary: #eceef2;
-  --background-secondary-alt: #eceef2;
-  --background-tertiary: #f6f7f9;
+  --background-secondary: #f0f0f0;
+  --background-secondary-alt: #f0f0f0;
+  --background-tertiary: #e6e6e6;
   --background-accent: #e6effc;
-  --background-floating: #fafbfc;
-  --background-nested-floating: #eceef2;
+  --background-floating: #f0f0f0;
+  --background-nested-floating: #f0f0f0;
   --background-mobile-primary: #ffffff;
-  --background-mobile-secondary: #eceef2;
-  --bg-base-secondary: #eceef2;
-  --bg-surface-raised: #eceef2;
+  --background-mobile-secondary: #f0f0f0;
+  --bg-base-secondary: #f0f0f0;
+  --bg-surface-raised: #f0f0f0;
   --home-background: #ffffff;
   --chat-background: #ffffff;
   --chat-border: #e9e9ea;
@@ -148,7 +148,7 @@
   --mention-background: #57606a;
   --background-mentioned: #9d5c0019;
   --background-mentioned-hover: #9d5c0014;
-  --background-message-hover: #eceef23F;
+  --background-message-hover: #f0f0f03F;
   --background-message-automod: #8250df0C;
   --background-message-automod-hover: #8250df19;
   --background-message-highlight: #0969da14;
@@ -156,14 +156,14 @@
   --channels-default: #696d71;
   --channel-icon: #0969da99;
   --channel-text-area-placeholder: #878a8e7F;
-  --channeltextarea-background: #eceef2;
+  --channeltextarea-background: #f0f0f0;
   --activity-card-background: #e9e9ea;
   --textbox-markdown-syntax: #1f2328;
   --spoiler-revealed-background: #e9e9ea;
   --spoiler-hidden-background: #696d71;
   --android-navigation-bar-background: #e9e9ea;
   --android-ripple: #ffffff4C;
-  --bg-mod-faint: #eceef2;
+  --bg-mod-faint: #f0f0f0;
   --bg-mod-subtle: #57606a;
   --focus-primary: #0969da;
   --interactive-normal: #1f2328;
@@ -176,12 +176,12 @@
 }
 
 div[class*="autocomplete_"] {
-    background-color: #fafbfc !important;
+    background-color: #f0f0f0 !important;
 }
 
 div[class*="autocomplete_"]
 div[class*="categoryHeader"] {
-    background-color: #fafbfc !important;
+    background-color: #f0f0f0 !important;
 }
 
 rect[mask="url(#svg-mask-status-online)"] {

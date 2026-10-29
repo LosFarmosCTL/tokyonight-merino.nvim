@@ -16,7 +16,7 @@
     }
   },
   "border": {
-    "default": "#23272d",
+    "default": "#1a1e24",
     "focused": "#58a6ff"
   },
   "status": {
@@ -42,6 +42,6 @@
   "DiffRemoved": "#2e2125",
   "Comment": "#82878c",
   "Gray": "#82878c",
-  "DarkGray": "#131519",
+  "DarkGray": "#0a0e12",
   "GradientColors": ["#58a6ff", "#d2a8ff", "#39c5cf"]
 }

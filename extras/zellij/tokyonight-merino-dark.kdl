@@ -5,7 +5,7 @@
 themes {
     tokyonight-merino-dark {
         fg "#e6edf3"
-        bg "#23272d"
+        bg "#1a1e24"
         // Black should match the terminal background color
         // This ensures the top and bottom bars are transparent
         black "#0d1117"

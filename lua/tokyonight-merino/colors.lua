@@ -9,15 +9,22 @@ function M.setup(opts)
   local ansi, ui = source.ansi, source.ui
   local light = vim.o.background == "light"
 
+  -- TokyoNight gives sidebars, statuslines, popups, and floats one shared
+  -- surface derived from the canvas. Rex's own pane tokens move by different
+  -- amounts and in different directions, which reads as disjointed next to the
+  -- editor background, so derive a single subtly sunken plane instead.
+  local panel = Util.blend("#000000", light and 0.06 or 0.20, source.background)
+  local panel_sunken = Util.blend("#000000", light and 0.04 or 0.05, panel)
+
   -- Preserve TokyoNight's syntax roles with Merino's surfaces and tuned accents.
   -- Bright light-theme ANSI colors stay in terminals where appropriate.
   ---@class Palette
   local colors = {
     bg = source.background,
-    bg_dark = ui.sidebar,
-    bg_dark1 = ui.bg,
-    -- An editor cursor line needs more contrast than Rex's canvas surface.
-    bg_highlight = Util.blend(ui.selected.color, 0.10, source.background),
+    bg_dark = panel,
+    bg_dark1 = panel_sunken,
+    -- Transparent dark terminals need a stronger cursor line over their own backdrop.
+    bg_highlight = Util.blend(ui.selected.color, light and 0.10 or opts.transparent and 0.14 or 0.06, source.background),
     fg = source.foreground,
     fg_dark = ui.text_secondary,
     fg_gutter = ui.border,
@@ -59,16 +66,20 @@ function M.setup(opts)
   colors.black = source.background
   colors.border = ui.border
   colors.border_highlight = ui.border_strong
-  colors.bg_popup = ui.raised
+  colors.bg_popup = panel
   colors.bg_statusline = opts.styles.statusline == "transparent" and colors.none
-    or opts.styles.statusline == "dark" and ui.sidebar
+    or opts.styles.statusline == "dark" and panel
     or colors.bg
   colors.bg_sidebar = opts.styles.sidebars == "transparent" and colors.none
-    or opts.styles.sidebars == "dark" and ui.sidebar
+    or opts.styles.sidebars == "dark" and panel
     or colors.bg
   colors.bg_float = opts.styles.floats == "transparent" and colors.none
-    or opts.styles.floats == "dark" and ui.raised
+    or opts.styles.floats == "dark" and panel
     or colors.bg
+  -- In-buffer highlights cannot use real alpha. Quiet neutral fills keep code
+  -- readable in transparent terminals without the renderer's colorful fallback.
+  colors.bg_code = opts.transparent and Util.blend(colors.fg, light and 0.04 or 0.10, colors.bg) or colors.bg_dark
+  colors.bg_inline = Util.blend(colors.fg, light and 0.06 or opts.transparent and 0.13 or 0.07, colors.bg)
   -- Selected editor and picker rows need more emphasis than Rex's UI selection.
   colors.bg_visual = Util.blend(ui.selected.color, light and 0.22 or 0.20, colors.bg)
   colors.bg_search = ui.accent_container

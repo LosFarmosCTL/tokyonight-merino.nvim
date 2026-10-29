@@ -124,9 +124,9 @@
   </dict>
   <key>Cursor Guide Color</key>
   <dict><key>Color Space</key><string>sRGB</string><key>Alpha Component</key><real>1</real>
-    <key>Red Component</key><real>0.1372549019607843</real>
-    <key>Green Component</key><real>0.1529411764705882</real>
-    <key>Blue Component</key><real>0.1764705882352941</real>
+    <key>Red Component</key><real>0.1019607843137255</real>
+    <key>Green Component</key><real>0.1176470588235294</real>
+    <key>Blue Component</key><real>0.1411764705882353</real>
   </dict>
   <key>Link Color</key>
   <dict><key>Color Space</key><string>sRGB</string><key>Alpha Component</key><real>1</real>

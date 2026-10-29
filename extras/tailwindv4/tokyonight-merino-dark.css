@@ -1,13 +1,13 @@
 @theme inline {
   --color-tokyonight-merino-dark-bg: oklch(from #0d1117 l c h);
-  --color-tokyonight-merino-dark-bg-dark: oklch(from #131519 l c h);
-  --color-tokyonight-merino-dark-bg-dark1: oklch(from #0c0e11 l c h);
-  --color-tokyonight-merino-dark-bg-float: oklch(from #1e2023 l c h);
-  --color-tokyonight-merino-dark-bg-highlight: oklch(from #23272d l c h);
-  --color-tokyonight-merino-dark-bg-popup: oklch(from #1e2023 l c h);
+  --color-tokyonight-merino-dark-bg-dark: oklch(from #0a0e12 l c h);
+  --color-tokyonight-merino-dark-bg-dark1: oklch(from #0a0d11 l c h);
+  --color-tokyonight-merino-dark-bg-float: oklch(from #0a0e12 l c h);
+  --color-tokyonight-merino-dark-bg-highlight: oklch(from #1a1e24 l c h);
+  --color-tokyonight-merino-dark-bg-popup: oklch(from #0a0e12 l c h);
   --color-tokyonight-merino-dark-bg-search: var(--color-tokyonight-merino-dark-blue0);
-  --color-tokyonight-merino-dark-bg-sidebar: oklch(from #131519 l c h);
-  --color-tokyonight-merino-dark-bg-statusline: oklch(from #131519 l c h);
+  --color-tokyonight-merino-dark-bg-sidebar: oklch(from #0a0e12 l c h);
+  --color-tokyonight-merino-dark-bg-statusline: oklch(from #0a0e12 l c h);
   --color-tokyonight-merino-dark-bg-visual: oklch(from #383d43 l c h);
   --color-tokyonight-merino-dark-black: oklch(from #0d1117 l c h);
   --color-tokyonight-merino-dark-black-bright: oklch(from #6e7681 l c h);

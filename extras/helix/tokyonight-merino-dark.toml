@@ -37,7 +37,7 @@ keyword = { fg = "#bc8cff", modifiers = ["italic"] }
 label = { fg = "#58a6ff" }
 "markup.bold" = { fg = "#e6edf3", modifiers = ["bold"] }
 "markup.heading" = { fg = "#58a6ff", modifiers = ["bold"] }
-"markup.heading.completion" = { bg = "#1e2023", fg = "#e6edf3" }
+"markup.heading.completion" = { bg = "#0a0e12", fg = "#e6edf3" }
 "markup.heading.hover" = { bg = "#383d43" }
 "markup.italic" = { fg = "#e6edf3", modifiers = ["italic"] }
 "markup.link" = { fg = "#39c5cf" }
@@ -47,7 +47,7 @@ label = { fg = "#58a6ff" }
 "markup.normal.completion" = { bg = "NONE", fg = "#82878c" }
 "markup.normal.hover" = { bg = "NONE", fg = "#82878c" }
 "markup.raw" = { fg = "#a3bd8d" }
-"markup.raw.inline" = { bg = "#6e7681", fg = "#58a6ff" }
+"markup.raw.inline" = { bg = "#1c2026", fg = "#58a6ff" }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 operator = { fg = "#79c0ff" }
 special = { fg = "#39c5cf" }
@@ -64,18 +64,18 @@ type = { fg = "#39c5cf" }
 "ui.cursor.match" = { fg = "#e98a4a", modifiers = ["bold"] }
 "ui.linenr" = { fg = "#666a6f" }
 "ui.linenr.select" = { fg = "#e98a4a", modifiers = ["bold"] }
-"ui.menu" = { bg = "#1e2023", fg = "#e6edf3" }
-"ui.menu.scroll" = { bg = "#282a2d", fg = "#2e3135" }
+"ui.menu" = { bg = "#0a0e12", fg = "#e6edf3" }
+"ui.menu.scroll" = { bg = "#15191d", fg = "#2e3135" }
 "ui.menu.selected" = { bg = "#383d43" }
-"ui.popup" = { bg = "#1e2023", fg = "#424549" }
+"ui.popup" = { bg = "#0a0e12", fg = "#424549" }
 "ui.selection" = { bg = "bg_highlight" }
-"ui.statusline" = { bg = "#131519", fg = "#82878c" }
-"ui.statusline.inactive" = { bg = "#131519", fg = "#666a6f" }
+"ui.statusline" = { bg = "#0a0e12", fg = "#82878c" }
+"ui.statusline.inactive" = { bg = "#0a0e12", fg = "#666a6f" }
 "ui.statusline.normal" = { bg = "blue", fg = "black" }
 "ui.text" = { bg = "#0d1117", fg = "#e6edf3" }
 "ui.text.focus" = { bg = "#383d43" }
 "ui.text.inactive" = { fg = "#82878c", modifiers = ["italic"] }
-"ui.text.info" = { bg = "#1e2023", fg = "#e6edf3" }
+"ui.text.info" = { bg = "#0a0e12", fg = "#e6edf3" }
 "ui.virtual.inlay-hint" = { bg = "#112329", fg = "#39c5cf" }
 "ui.window" = { fg = "#2e3135", modifiers = ["bold"] }
 variable = { fg = "#e6edf3" }
@@ -86,14 +86,16 @@ warning = { fg = "#d29922" }
 
 [palette]
 bg = "#0d1117"
-bg_dark = "#131519"
-bg_dark1 = "#0c0e11"
-bg_float = "#1e2023"
-bg_highlight = "#23272d"
-bg_popup = "#1e2023"
+bg_code = "#0a0e12"
+bg_dark = "#0a0e12"
+bg_dark1 = "#0a0d11"
+bg_float = "#0a0e12"
+bg_highlight = "#1a1e24"
+bg_inline = "#1c2026"
+bg_popup = "#0a0e12"
 bg_search = "#142134"
-bg_sidebar = "#131519"
-bg_statusline = "#131519"
+bg_sidebar = "#0a0e12"
+bg_statusline = "#0a0e12"
 bg_visual = "#383d43"
 black = "#0d1117"
 blue = "#58a6ff"

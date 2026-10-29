@@ -42,6 +42,6 @@
   "DiffRemoved": "#fee9e7",
   "Comment": "#696d71",
   "Gray": "#696d71",
-  "DarkGray": "#eceef2",
+  "DarkGray": "#f0f0f0",
   "GradientColors": ["#0969da", "#8250df", "#1b7c83"]
 }

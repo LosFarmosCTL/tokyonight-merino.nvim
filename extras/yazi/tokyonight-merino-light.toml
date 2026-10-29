@@ -9,7 +9,7 @@ hovered         = { bg = "#e9e9ea" }
 preview_hovered = { bg = "#e9e9ea" }
 
 # Find
-find_keyword  = { fg = "#eceef2", bg = "#b63f17", bold = true }
+find_keyword  = { fg = "#f0f0f0", bg = "#b63f17", bold = true }
 find_position = { fg = "#0667d8", bg = "#e6f0fb", bold = true }
 
 # Marker
@@ -19,9 +19,9 @@ marker_marked   = { fg = "#8250df", bg = "#8250df" }
 marker_selected = { fg = "#0969da", bg = "#0969da" }
 
 # Count
-count_copied   = { fg = "#eceef2", bg = "#116329" }
-count_cut      = { fg = "#eceef2", bg = "#cf222e" }
-count_selected = { fg = "#eceef2", bg = "#0969da" }
+count_copied   = { fg = "#f0f0f0", bg = "#116329" }
+count_cut      = { fg = "#f0f0f0", bg = "#cf222e" }
+count_selected = { fg = "#f0f0f0", bg = "#0969da" }
 
 # Border
 border_symbol = "│"
@@ -43,7 +43,7 @@ unset_main  = { fg = "#ffffff", bg = "#8250df", bold = true }
 unset_alt   = { fg = "#8250df", bg = "#e7e9eb" }
 
 [status]
-overall   = { fg = "#1f2328", bg = "#eceef2" }
+overall   = { fg = "#1f2328", bg = "#f0f0f0" }
 sep_left  = { open = "", close = "" }
 sep_right = { open = "", close = "" }
 
@@ -90,7 +90,7 @@ hovered = { fg = "#1f2328", bg = "#cecfd0" }
 # Which
 [which]
 cols            = 3
-mask            = { bg = "#eceef2" }
+mask            = { bg = "#f0f0f0" }
 cand            = { fg = "#1b7c83" }
 rest            = { fg = "#0969da" }
 desc            = { fg = "#8250df" }

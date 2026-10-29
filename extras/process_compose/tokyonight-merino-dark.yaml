@@ -2,7 +2,7 @@ style:
   name: tokyonight-merino-dark
   body:
     fgColor: '#e6edf3'
-    bgColor: '#131519'
+    bgColor: '#0a0e12'
     secondaryTextColor: '#82878c'
     tertiaryTextColor: '#e6edf3'
     borderColor: '#2e3135'
@@ -28,7 +28,7 @@ style:
     contrastBgColor: '#0d1117'
     attentionBgColor: '#ff7b72'
     buttonFgColor: '#0d1117'
-    buttonBgColor: '#23272d'
+    buttonBgColor: '#1a1e24'
     buttonFocusFgColor: '#0d1117'
     buttonFocusBgColor: '#58a6ff'
     labelFgColor: '#d29922'

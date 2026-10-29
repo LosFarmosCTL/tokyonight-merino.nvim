@@ -11,7 +11,7 @@ theme[title]="#e6edf3"
 theme[hi_fg]="#e98a4a"
 
 # Selected item in processes box
-theme[selected_bg]="#23272d"
+theme[selected_bg]="#1a1e24"
 theme[selected_fg]="#39c5cf"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text

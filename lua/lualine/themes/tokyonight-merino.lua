@@ -43,7 +43,8 @@ if config.styles.statusline ~= "dark" then
   for name, mode in pairs(hl) do
     for section, color in pairs(mode) do
       if name == "inactive" or section ~= "a" then
-        color.bg = colors.bg_statusline
+        -- Match lualine's normalized component colors to avoid spurious separators.
+        color.bg = colors.bg_statusline == colors.none and "None" or colors.bg_statusline
       end
     end
   end

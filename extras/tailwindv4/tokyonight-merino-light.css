@@ -1,13 +1,13 @@
 @theme inline {
   --color-tokyonight-merino-light-bg: oklch(from #ffffff l c h);
-  --color-tokyonight-merino-light-bg-dark: oklch(from #eceef2 l c h);
-  --color-tokyonight-merino-light-bg-dark1: oklch(from #f6f7f9 l c h);
-  --color-tokyonight-merino-light-bg-float: oklch(from #fafbfc l c h);
+  --color-tokyonight-merino-light-bg-dark: oklch(from #f0f0f0 l c h);
+  --color-tokyonight-merino-light-bg-dark1: oklch(from #e6e6e6 l c h);
+  --color-tokyonight-merino-light-bg-float: oklch(from #f0f0f0 l c h);
   --color-tokyonight-merino-light-bg-highlight: oklch(from #e9e9ea l c h);
-  --color-tokyonight-merino-light-bg-popup: oklch(from #fafbfc l c h);
+  --color-tokyonight-merino-light-bg-popup: oklch(from #f0f0f0 l c h);
   --color-tokyonight-merino-light-bg-search: var(--color-tokyonight-merino-light-blue0);
-  --color-tokyonight-merino-light-bg-sidebar: oklch(from #eceef2 l c h);
-  --color-tokyonight-merino-light-bg-statusline: oklch(from #eceef2 l c h);
+  --color-tokyonight-merino-light-bg-sidebar: oklch(from #f0f0f0 l c h);
+  --color-tokyonight-merino-light-bg-statusline: oklch(from #f0f0f0 l c h);
   --color-tokyonight-merino-light-bg-visual: oklch(from #cecfd0 l c h);
   --color-tokyonight-merino-light-black: oklch(from #ffffff l c h);
   --color-tokyonight-merino-light-black-bright: oklch(from #57606a l c h);
