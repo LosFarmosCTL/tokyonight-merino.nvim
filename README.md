@@ -17,7 +17,7 @@ For [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "LosFarmosCTL/tokyonight-merino",
+  "LosFarmosCTL/tokyonight-merino.nvim",
   lazy = false,
   priority = 1000,
   opts = {},

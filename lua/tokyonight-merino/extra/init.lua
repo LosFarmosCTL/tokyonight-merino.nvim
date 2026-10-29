@@ -56,7 +56,7 @@ M.extras = {
   zellij           = { ext = "kdl", url = "https://zellij.dev/", label = "Zellij" },
 }
 
-local repository = "https://github.com/LosFarmosCTL/tokyonight-merino"
+local repository = "https://github.com/LosFarmosCTL/tokyonight-merino.nvim"
 
 ---@param name string
 ---@param background string

@@ -55,7 +55,7 @@ function M.generate(colors)
    "simpleScrollbar": true,
    "transparencyTabBar": false,
    "transparencyTabs": false,
-   "url": "https://github.com/LosFarmosCTL/tokyonight-merino",
+   "url": "https://github.com/LosFarmosCTL/tokyonight-merino.nvim",
    "version": 1
 }]],
     colors

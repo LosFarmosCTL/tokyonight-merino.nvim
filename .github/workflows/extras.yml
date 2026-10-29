@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   extras:
-    if: github.repository == 'LosFarmosCTL/tokyonight-merino'
+    if: github.repository == 'LosFarmosCTL/tokyonight-merino.nvim'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

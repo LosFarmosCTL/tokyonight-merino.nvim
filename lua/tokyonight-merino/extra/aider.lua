@@ -10,7 +10,7 @@ function M.generate(colors)
 assistant-output-color: "${fg}"
 
 # see the aider extra README for more information about setting the `code-theme`
-# https://github.com/LosFarmosCTL/tokyonight-merino/blob/main/extras/aider/README.md
+# https://github.com/LosFarmosCTL/tokyonight-merino.nvim/blob/main/extras/aider/README.md
 # Keep a built-in code-theme of your choice; this export does not include a Pygments plugin.
 
 completion-menu-color: "${fg_float}"
