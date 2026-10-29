@@ -39,6 +39,16 @@ hl.inactive = {
   c = { bg = colors.bg_statusline, fg = colors.dark3 },
 }
 
+if config.styles.statusline ~= "dark" then
+  for name, mode in pairs(hl) do
+    for section, color in pairs(mode) do
+      if name == "inactive" or section ~= "a" then
+        color.bg = colors.bg_statusline
+      end
+    end
+  end
+end
+
 if config.lualine_bold then
   for _, mode in pairs(hl) do
     mode.a.gui = "bold"

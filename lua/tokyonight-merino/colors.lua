@@ -60,7 +60,9 @@ function M.setup(opts)
   colors.border = ui.border
   colors.border_highlight = ui.border_strong
   colors.bg_popup = ui.raised
-  colors.bg_statusline = ui.sidebar
+  colors.bg_statusline = opts.styles.statusline == "transparent" and colors.none
+    or opts.styles.statusline == "dark" and ui.sidebar
+    or colors.bg
   colors.bg_sidebar = opts.styles.sidebars == "transparent" and colors.none
     or opts.styles.sidebars == "dark" and ui.sidebar
     or colors.bg

@@ -62,6 +62,7 @@ require("tokyonight-merino").setup({
     -- Also accepts "normal" (editor background) or "transparent".
     sidebars = "dark",
     floats = "dark",
+    statusline = "dark",
   },
   dim_inactive = false,
   lualine_bold = false,
@@ -79,7 +80,13 @@ require("tokyonight-merino").setup({
 ```
 
 `styles.comments`, `keywords`, `functions`, and `variables` accept Neovim
-highlight attributes. `on_colors` runs after building the palette;
+highlight attributes. `styles.sidebars`, `floats`, and `statusline` control their
+backgrounds independently of `transparent`. The statusline style also applies to
+winbars and lualine, preserving lualine's colored mode badge. For a transparent
+editor and UI, use `transparent = true` and set all three background styles to
+`"transparent"`.
+
+`on_colors` runs after building the palette;
 `on_highlights` runs after generating highlights. Both can override defaults:
 
 ```lua
