@@ -104,9 +104,9 @@ function M.get(c, opts)
 
     -- These groups are for the native LSP client. Some other LSP clients may
     -- use these groups, or use their own.
-    LspReferenceText            = { bg = c.fg_gutter }, -- used for highlighting "text" references
-    LspReferenceRead            = { bg = c.fg_gutter }, -- used for highlighting "read" references
-    LspReferenceWrite           = { bg = c.fg_gutter }, -- used for highlighting "write" references
+    LspReferenceText            = { bg = c.bg_reference }, -- used for highlighting "text" references
+    LspReferenceRead            = { bg = c.bg_reference }, -- used for highlighting "read" references
+    LspReferenceWrite           = { bg = c.bg_reference }, -- used for highlighting "write" references
     LspSignatureActiveParameter = { bg = Util.blend_bg(c.bg_visual, 0.4), bold = true },
     LspCodeLens                 = { fg = c.comment },
     LspInlayHint                = { bg = Util.blend_bg(c.blue7, 0.1), fg = c.dark3 },

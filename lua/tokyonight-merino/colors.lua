@@ -82,6 +82,7 @@ function M.setup(opts)
   colors.bg_inline = Util.blend(colors.fg, light and 0.06 or opts.transparent and 0.13 or 0.07, colors.bg)
   -- Selected editor and picker rows need more emphasis than Rex's UI selection.
   colors.bg_visual = Util.blend(ui.selected.color, light and 0.22 or 0.20, colors.bg)
+  colors.bg_reference = Util.blend(ui.selected.color, light and 0.22 or 0.25, colors.bg)
   colors.bg_search = ui.accent_container
   colors.fg_sidebar = colors.fg_dark
   colors.fg_float = colors.fg
