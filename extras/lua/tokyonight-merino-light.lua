@@ -9,6 +9,7 @@ local colors = {
   bg_highlight = "#e9e9ea",
   bg_inline = "#f2f2f2",
   bg_popup = "#f0f0f0",
+  bg_reference = "#cecfd0",
   bg_search = "#e6effc",
   bg_sidebar = "#f0f0f0",
   bg_statusline = "#f0f0f0",
@@ -1366,13 +1367,13 @@ local highlights = {
   LspKindValue = "@string",
   LspKindVariable = "@variable",
   LspReferenceRead = {
-    bg = "#e7e9eb"
+    bg = "#cecfd0"
   },
   LspReferenceText = {
-    bg = "#e7e9eb"
+    bg = "#cecfd0"
   },
   LspReferenceWrite = {
-    bg = "#e7e9eb"
+    bg = "#cecfd0"
   },
   LspSagaBorderTitle = {
     fg = "#1b7c83"
