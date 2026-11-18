@@ -96,9 +96,9 @@ hi LineNrBelow guibg=NONE guifg=#666a6f
 hi LspCodeLens guibg=NONE guifg=#82878c
 hi LspInfoBorder guibg=#0a0e12 guifg=#424549
 hi LspInlayHint guibg=#15202e guifg=#666a6f
-hi LspReferenceRead guibg=#2e3135
-hi LspReferenceText guibg=#2e3135
-hi LspReferenceWrite guibg=#2e3135
+hi LspReferenceRead guibg=#43484e
+hi LspReferenceText guibg=#43484e
+hi LspReferenceWrite guibg=#43484e
 hi LspSignatureActiveParameter gui=bold guibg=#1e2329
 hi MatchParen gui=bold guibg=NONE guifg=#e98a4a
 hi MiniAnimateCursor gui=reverse,nocombine guibg=NONE
